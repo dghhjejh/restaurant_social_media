@@ -25,7 +25,7 @@ const fetchVisitDetails = async () => {
     );
     visitDetails.value = response;
   } catch (error) {
-    console.error("Error fetching visit details:", error);
+    //console.error("Error fetching visit details:", error);
   }
 };
 

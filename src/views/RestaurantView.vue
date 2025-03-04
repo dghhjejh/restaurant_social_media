@@ -52,8 +52,8 @@ const handleChangePage = async (pageId) => {
     10,
     pageId,
   );
-  console.log(visits.value);
-  console.log("From restaurant view Page changed to: ", pageId);
+  //console.log(visits.value);
+  //console.log("From restaurant view Page changed to: ", pageId);
 };
 const load = ({ done }) => {
   done("empty");

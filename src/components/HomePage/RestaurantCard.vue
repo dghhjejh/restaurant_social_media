@@ -36,7 +36,7 @@ const copyToClipboard = (text) => {
       }, 1000);
     })
     .catch((err) => {
-      console.error("Erreur lors de la copie dans le presse-papiers :", err);
+      //console.error("Erreur lors de la copie dans le presse-papiers :", err);
     });
 };
 

@@ -13,7 +13,7 @@ export default {
 
       user = response.data;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return user;
     }
@@ -30,7 +30,7 @@ export default {
 
       responseStatus = response.status;
     } catch (e) {
-      console.error("Error following user:", e);
+      //console.error("Error following user:", e);
       throw e;
     } finally {
       return responseStatus;
@@ -48,7 +48,7 @@ export default {
 
       responseStatus = response.status;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return responseStatus;
     }
@@ -65,7 +65,7 @@ export default {
       }
       users = response.data.items;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return users;
     }

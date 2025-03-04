@@ -16,7 +16,7 @@ export default {
 
       userFavorites = response.data.items;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return userFavorites;
     }
@@ -33,7 +33,7 @@ export default {
 
       favoriteList = response.data;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return favoriteList;
     }
@@ -46,7 +46,7 @@ export default {
       data.name = listName;
       if (listOwner) data.owner = listOwner;
 
-      console.log(data);
+      //console.log(data);
 
       const response = await apiClient.post("/favorites", data);
 
@@ -56,7 +56,7 @@ export default {
 
       createdList = response.data;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return createdList;
     }
@@ -77,7 +77,7 @@ export default {
 
       updatedList = response.data.items;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return updatedList;
     }
@@ -94,7 +94,7 @@ export default {
 
       responseStatus = response.status;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return responseStatus;
     }
@@ -125,7 +125,7 @@ export default {
         }),
       );
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return updatedFavoriteList;
     }
@@ -155,7 +155,7 @@ export default {
         }),
       );
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return updatedFavoriteList;
     }

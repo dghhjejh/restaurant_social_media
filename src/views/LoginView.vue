@@ -28,7 +28,7 @@ const postLogin = async () => {
       login(email.value, password.value);
     }
   } catch (error) {
-    console.error("Erreur lors de la connexion :", error);
+    //console.error("Erreur lors de la connexion :", error);
   }
 };
 

@@ -21,7 +21,7 @@ navigator.geolocation.getCurrentPosition((position) => {
 
 async function displayNearbyRestaurants(userLat, userLon) {
   if (!userLat || !userLon || !carte) {
-    console.error("Paramètres invalides ou carte non initialisée");
+    //console.error("Paramètres invalides ou carte non initialisée");
     return;
   }
 
@@ -95,7 +95,7 @@ onMounted(async () => {
 
     displayNearbyRestaurants(Latitude.value, Longitude.value);
   } catch (error) {
-    console.error("Erreur lors de l'initialisation de la carte:", error);
+    //console.error("Erreur lors de l'initialisation de la carte:", error);
   }
 });
 

@@ -48,7 +48,7 @@ export async function useRestaurant(restaurantId) {
 
       restaurant.value.cleanedTel = newTel;
     } else {
-      console.error("Telephone number is undefined");
+      //console.error("Telephone number is undefined");
     }
   };
 

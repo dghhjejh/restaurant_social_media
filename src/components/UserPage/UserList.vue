@@ -30,7 +30,7 @@ const fetchUsers = async () => {
     users.value = await userService.searchUsers(props.searchQuery);
   } catch (error) {
     alert("Une erreur s'est produite lors de la recherche des utilisateurs.");
-    console.error(error);
+    //console.error(error);
   }
 };
 
@@ -46,7 +46,7 @@ const fetchUserRelations = async () => {
     followers.value = user.followers;
   } catch (error) {
     alert("Une erreur s'est produite lors de la récupération des données.");
-    console.error(error);
+    //console.error(error);
   }
 };
 
@@ -56,7 +56,7 @@ const followUser = async (userId) => {
     followedUsers.value.push(userId);
   } catch (error) {
     alert("Une erreur s'est produite lors du suivi de l'utilisateur.");
-    console.error(error);
+    //console.error(error);
   }
 };
 
@@ -66,7 +66,7 @@ const unfollowUser = async (userId) => {
     followedUsers.value = followedUsers.value.filter((id) => id !== userId);
   } catch (error) {
     alert("Une erreur s'est produite lors de l'annulation du suivi.");
-    console.error(error);
+    //console.error(error);
   }
 };
 

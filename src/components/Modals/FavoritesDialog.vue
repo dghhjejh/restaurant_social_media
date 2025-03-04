@@ -25,10 +25,10 @@ const addRestaurantToList = (favoritesListId) => {
     });
     emit("close");
   } catch (error) {
-    console.error(
+    /*console.error(
       "An error occurred while adding the restaurant to the list:",
       error,
-    );
+    );*/
   }
 };
 </script>

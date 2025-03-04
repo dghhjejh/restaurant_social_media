@@ -34,7 +34,7 @@ export const store = reactive({
 
       await favoriteService.addRestaurantToFavoriteList(listId, restaurantId);
     } catch (error) {
-      console.error("Error adding restaurant to favorites:", error);
+      //console.error("Error adding restaurant to favorites:", error);
     }
   },
   handleVisitSubmittedFunction: () => {},

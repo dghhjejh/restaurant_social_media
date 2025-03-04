@@ -30,7 +30,7 @@ const fetchUserName = async (userId) => {
     }
     return userDetails.name || "Utilisateur inconnu";
   } catch (error) {
-    console.error(error);
+    //console.error(error);
     return "Erreur de récupération";
   }
 };
@@ -42,7 +42,7 @@ const loadUserNames = async () => {
       localVisits.value[i] = { ...localVisits.value[i], name };
     }
   } else {
-    console.error("Impossible de charger les noms d'utilisateur");
+    //console.error("Impossible de charger les noms d'utilisateur");
   }
 };
 

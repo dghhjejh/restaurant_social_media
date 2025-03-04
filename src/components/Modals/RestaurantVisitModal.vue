@@ -58,7 +58,7 @@ const postVisit = async () => {
       );
     }
   } catch (error) {
-    console.error("Erreur lors de l'enregistrement de la visite :", error);
+    //console.error("Erreur lors de l'enregistrement de la visite :", error);
   }
 };
 

@@ -21,7 +21,7 @@ const fetchUser = async (userId) => {
   try {
     user.value = await userService.getUser(userId);
   } catch (error) {
-    console.error(error);
+    //console.error(error);
     user.value = null;
   }
 };
@@ -35,7 +35,7 @@ const fetchUserDetails = async () => {
     );
   } catch (error) {
     alert("Erreur lors de la récupération des détails de l'utilisateur.");
-    console.error(error);
+    //console.error(error);
   }
 };
 
@@ -45,7 +45,7 @@ const followUser = async () => {
     isFollowing.value = true;
   } catch (error) {
     alert("Erreur lors du suivi de l'utilisateur.");
-    console.error(error);
+    //console.error(error);
   }
 };
 
@@ -59,7 +59,7 @@ const unfollowUser = async () => {
     isFollowing.value = false;
   } catch (error) {
     alert("Erreur lors de l'annulation du suivi.");
-    console.error(error);
+    //console.error(error);
   }
 };
 

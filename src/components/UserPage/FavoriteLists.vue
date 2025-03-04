@@ -41,7 +41,7 @@ const saveListName = async (list) => {
   );
 
   if (isDuplicate) {
-    console.warn("Une liste avec ce nom existe déjà.");
+    //console.warn("Une liste avec ce nom existe déjà.");
     alert(
       "Une liste avec ce nom existe déjà. Veuillez choisir un nom différent.",
     );
@@ -53,7 +53,7 @@ const saveListName = async (list) => {
     list.name = list.newName;
     list.isEditing = false;
   } catch (error) {
-    console.error("Erreur lors de la mise à jour du nom de la liste :", error);
+    //console.error("Erreur lors de la mise à jour du nom de la liste :", error);
   }
 };
 
@@ -67,7 +67,7 @@ const postFavoriteList = async () => {
       list.name.toLowerCase() === newListName.value.trim().toLowerCase(),
   );
   if (isDuplicate) {
-    console.error("Une liste avec ce nom existe déjà.");
+    //console.error("Une liste avec ce nom existe déjà.");
     alert(
       "Veuillez choisir un nom différent. Une liste avec ce nom existe déjà.",
     );
@@ -75,7 +75,7 @@ const postFavoriteList = async () => {
   }
   const isValid = await newListForm.value.validate();
   if (!isValid) {
-    console.warn("Form validation failed.");
+    //console.warn("Form validation failed.");
     return;
   }
   try {
@@ -91,7 +91,7 @@ const postFavoriteList = async () => {
     newListName.value = "";
     newListForm.value.resetValidation();
   } catch (error) {
-    console.error("Erreur lors de la création de la liste de favoris :", error);
+    //console.error("Erreur lors de la création de la liste de favoris :", error);
   }
 };
 
@@ -105,7 +105,7 @@ const deleteFavoriteList = async (listId) => {
 
     store.setCurrentUserFavorites(tempUserFavorites);
   } catch (error) {
-    console.error("Error deleting favorite list:", error);
+    //console.error("Error deleting favorite list:", error);
   }
 };
 
@@ -118,7 +118,7 @@ const addSelectedRestaurantToList = async (favoriteId) => {
     (list) => list.id === favoriteId,
   );
   if (!favoriteList) {
-    console.error("Liste de favoris non trouvée");
+    //console.error("Liste de favoris non trouvée");
     return;
   }
   const restaurantExists = favoriteList.restaurants.some(
@@ -145,7 +145,7 @@ const addSelectedRestaurantToList = async (favoriteId) => {
     store.setCurrentUserFavorites(tempUserFavorites);
     selectedRestaurant.value = null;
   } catch (error) {
-    console.error("Erreur lors de l'ajout du restaurant à la liste :", error);
+    //console.error("Erreur lors de l'ajout du restaurant à la liste :", error);
   }
 };
 
@@ -165,7 +165,7 @@ const removeRestaurantFromList = async (favoriteId, restaurantId) => {
     store.setCurrentUserFavorites(tempUserFavorites);
     selectedRestaurant.value = null;
   } catch (error) {
-    console.error("Error removing restaurant from list:", error);
+    //console.error("Error removing restaurant from list:", error);
   }
 };
 </script>

@@ -32,7 +32,7 @@ export default {
 
       restaurants = response.data.items;
     } catch (error) {
-      console.error(error);
+      //console.error(error);
     } finally {
       return restaurants;
     }
@@ -50,7 +50,7 @@ export default {
 
       restaurant = response.data;
     } catch (error) {
-      console.error(error);
+      //console.error(error);
     } finally {
       return restaurant;
     }
@@ -79,7 +79,7 @@ export default {
 
       restaurantVisits = orderedList;
     } catch (error) {
-      console.error(error);
+      //console.error(error);
     } finally {
       return restaurantVisits;
     }

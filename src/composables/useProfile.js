@@ -21,7 +21,7 @@ export async function useProfile(userStore) {
       );
       userRecentVisits.value = visits;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     }
   };
 
@@ -58,7 +58,7 @@ export async function useProfile(userStore) {
 
       allRestaurantNames.value = filteredRestaurants;
     } catch (error) {
-      console.error("Erreur lors de la récupération des restaurants :", error);
+      //console.error("Erreur lors de la récupération des restaurants :", error);
     }
   };
 
@@ -76,7 +76,7 @@ export async function useProfile(userStore) {
       allFavoriteListNames.value = filteredLists;
       const listNames = allFavoriteListNames.value.map((list) => list.name);
     } catch (error) {
-      console.error("Erreur lors de la récupération des lests :", error);
+      //console.error("Erreur lors de la récupération des lests :", error);
     }
   };
 

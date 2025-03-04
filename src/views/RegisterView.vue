@@ -69,7 +69,7 @@ const handleSignup = async () => {
     if (error.message.includes("Un compte existe déjà")) {
       emailError.value = error.message;
     } else {
-      console.error("Erreur d'inscription :", error.message);
+      //console.error("Erreur d'inscription :", error.message);
     }
   }
 };

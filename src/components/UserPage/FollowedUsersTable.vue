@@ -24,7 +24,7 @@ const fetchFollowedUsers = async () => {
     followedUsers.value = user.following;
   } catch (error) {
     alert("Une erreur s'est produite lors de la récupération des données.");
-    console.error(error);
+    //console.error(error);
   }
 };
 
@@ -36,7 +36,7 @@ const unfollowUser = async (userId) => {
     );
   } catch (error) {
     alert("Une erreur s'est produite lors de l'annulation du suivi.");
-    console.error(error);
+    //console.error(error);
   }
 };
 

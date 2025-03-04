@@ -31,7 +31,7 @@ export default {
 
       return Object.values(restaurantVisits);
     } catch (error) {
-      console.error("Error fetching recent visits:", error);
+      //console.error("Error fetching recent visits:", error);
       throw error;
     }
   },
@@ -39,7 +39,7 @@ export default {
     try {
       return apiClient.post(`/users/${userId}/restaurants/visits`, visitData);
     } catch (error) {
-      console.error("Erreur lors de la création de la visite :", error);
+      //console.error("Erreur lors de la création de la visite :", error);
       throw error;
     }
   },
@@ -60,7 +60,7 @@ export default {
 
       restaurantVisitsOfUser = response.data.items;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     } finally {
       return restaurantVisitsOfUser;
     }
